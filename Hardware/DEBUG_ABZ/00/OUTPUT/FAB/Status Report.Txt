@@ -1,0 +1,10 @@
+Output: Export STEP
+Type  : ExportSTEP
+From  : Variant [[No Variations]] of PCB Document [DEBUG_ABZ.PcbDoc]
+   Generated File[DEBUG_ABZ.step]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 3:02:24 PM On 3/13/2021
