@@ -150,16 +150,6 @@ extern const UTIL_TIMER_Driver_s UTIL_TimerDriver;
 /* Exported macros -----------------------------------------------------------*/
 /* Exported functions ------------------------------------------------------- */ 
 
-
-/**
- * @brief Timer IRQ event handler
- *
- * @note Head Timer Object is automatically removed from the List
- *
- * @note e.g. it is not needed to stop it
- */
-void UTIL_TIMER_IRQ_Handler( void );
-
 /** @defgroup TIMER_SERVER_exported_function TIMER_SERVER exported function
   *  @{
   */
@@ -278,7 +268,14 @@ UTIL_TIMER_Time_t UTIL_TIMER_GetCurrentTime(void);
   */
 UTIL_TIMER_Time_t UTIL_TIMER_GetElapsedTime(UTIL_TIMER_Time_t past );
 
-
+/**
+ * @brief Timer IRQ event handler
+ *
+ * @note Head Timer Object is automatically removed from the List
+ *
+ * @note e.g. it is not needed to stop it
+ */
+void UTIL_TIMER_IRQ_Handler( void );
 
 /**
   * @}
